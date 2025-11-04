@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ImageSlideshow"
-  s.version          = "1.9.2"
+  s.version          = "1.9.3"
   s.summary          = "Image slideshow written in Swift with circular scrolling, timer and full screen viewer"
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Image slideshow is a Swift library providing customizable image slideshow with c
   s.social_media_url = 'https://twitter.com/zvonicek'
 
   s.swift_versions = ['4.0', '4.1', '4.2', '5', '5.1', '5.2']
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '13.0'
   s.requires_arc = true
 
   s.subspec 'Core' do |core|
@@ -38,7 +38,7 @@ Image slideshow is a Swift library providing customizable image slideshow with c
 
   s.subspec 'AFURL' do |subspec|
     subspec.dependency 'ImageSlideshow/Core'
-    subspec.dependency 'AFNetworking', '~> 3.0'
+    subspec.dependency 'AFNetworking', '~> 4.0'
     subspec.source_files = 'ImageSlideshow/Classes/InputSources/AFURLSource.swift'
   end
 
@@ -63,8 +63,8 @@ Image slideshow is a Swift library providing customizable image slideshow with c
 
   s.subspec 'Kingfisher' do |subspec|
     subspec.dependency 'ImageSlideshow/Core'
-    subspec.dependency 'Kingfisher', '> 7.0'
-    subspec.platform     = :ios, '12.0'
+    subspec.dependency 'Kingfisher', '> 3.0'
+    subspec.platform     = :ios, '13.0'
     subspec.source_files = 'ImageSlideshow/Classes/InputSources/KingfisherSource.swift'
   end
 
