@@ -22,7 +22,7 @@ let package = Package(
             targets: ["ImageSlideshowKingfisher"])
     ],
     dependencies: [
-        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "8.3.2"),
+        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "8.9.0"),
         .package(url: "https://github.com/Alamofire/AlamofireImage.git", from: "5.10.2"),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.21.0")
     ],
